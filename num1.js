@@ -2,6 +2,11 @@ var _ = require('lodash');
 _.mixin(require('lodash-toolbox'));
 var lodash = require('lodash');
 
+var sum = 0,
+  numProgrammers2 = 0,
+  avgAwesome2 = 0,
+  j = 0;
+
 
 var people =[
 {
@@ -34,33 +39,33 @@ awesomeIndex: 3,
 }
 ];
 
-var test = _.each({one: 1, two: 2, three: 3}, console.log());
-console.log(test);
+console.log(avgAwesome());
 
-var sum = _.sum(people, 'awesomeIndex');
-var avgAwesome = sum/people.length;
-console.log(sum);
-console.log(avgAwesome);
-
-console.log(people[1].awesomeIndex);
-console.log(people.length);
-
-
-
+function avgAwesome() {
+  var total = 0;
+  var numProgrammers = 0;
+  for (i=0; i<people.length; i++){
+    if (people[i].occupation === 'programmer') {
+      total += people[i].awesomeIndex;
+      numProgrammers += 1;
+    }
+  }
+  return total/numProgrammers;
+}
 //-------------------------
-//avgAwesome();
-// console.log(avgAwesome());
+//var test =
+_.forEach(people, function(){
+  if (people[j].occupation == 'programmer') {
+    sum += _.add(people[j].awesomeIndex);
+    numProgrammers2 += 1;
+  }
+  j++;
+  avgAwesome2 = sum/numProgrammers2;
+});
 
-// function avgAwesome() {
-//   var total = 0;
-//   var numProgrammers = 0;
-//   for (i=0; i<people.length; i++){
-//     if (people[i].occupation === 'programmer') {
-//       total += people[i].awesomeIndex;
-//       numProgrammers += 1;
-//     }
-//   }
-//   return total/numProgrammers;
-// }
+console.log(avgAwesome2);
+//console.log(test);
+
+
 
 
