@@ -7,12 +7,11 @@
 <!-- <script src="style.css" type="text/javascript" charset="utf-8"></script> -->
 
 <body>
-
   <main>
     <h1 style='padding: 20px;'>Average Awesomeness</h1>
-    <button id="staff" type="submit">Click to see another employee's information </button>
+    <button id="staff" type="submit">Click to see employee's information </button>
     <div>
-      <p id = "name"> Name: </p>
+      <p id = "name"> people[0].name </p>
       <p id = "occupation"> Occupation: </p>
       <p id = "awesomeIndex"> Awesome Index: <p>
 
@@ -20,6 +19,8 @@
       Occupation:<input type = "text" name = "occupation"<br>
       Awesome Index: <input type = "text" name = "Awesome Index" <br>
        -->
+    </div>
+    <div>
        <button id="AvgAwesomeButton" type="submit">Calculate Average Awesomeness</button>
 <!--       <p id='translated'></p> -->
 <!--       <textarea id='result' name='text'>
@@ -29,14 +30,30 @@
     </div>
 
   </main>
+
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 
-<script> $('#name').append(document.createTextNode("Hello"));
-$("staff").append
+<script>
+// var i = 0;
+// $("#staff").click(function(){
+//   //for(i=0; i<people.length; i++)
+
+//   $('#name').append(document.createTextNode(people[i].name));
+//   $('#occupation').append(document.createTextNode(people[i].occupation));
+//   $('#awesomeIndex').append(document.createTextNode(people[i].awesomeIndex));
+//   if (i<people.length){
+//     i++;
+//   }
+//   else {
+//     i =0;
+//   }
+// })
+//$('#name').append(document.createTextNode("Hello"));
+//$("staff").append
 
 $("#AvgAwesomeButton").click(function(){
-  $('#result').append(document.createTextNode(avgAwesome()))
+  $('#result').append(document.createTextNode(avgAwesome()));
 })
 
 </script>
