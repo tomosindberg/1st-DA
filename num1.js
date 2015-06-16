@@ -1,6 +1,12 @@
-var _ = require('lodash');
-_.mixin(require('lodash-toolbox'));
-var lodash = require('lodash');
+// var _ = require('lodash');
+// _.mixin(require('lodash-toolbox'));
+// var lodash = require('lodash');
+
+//require(['lodash'], function(_) {});
+//var _ = require('lodash');
+// var array = require('lodash/array');
+// var chunk = require('lodash/array/chunk');
+
 
 var sum = 0,
   numProgrammers2 = 0,
@@ -54,16 +60,16 @@ function avgAwesome() {
 }
 //-------------------------
 //var test =
-_.forEach(people, function(){
-  if (people[j].occupation == 'programmer') {
-    sum += _.add(people[j].awesomeIndex);
-    numProgrammers2 += 1;
-  }
-  j++;
-  avgAwesome2 = sum/numProgrammers2;
-});
+// _.forEach(people, function(){
+//   if (people[j].occupation == 'programmer') {
+//     sum += _.add(people[j].awesomeIndex);
+//     numProgrammers2 += 1;
+//   }
+//   j++;
+//   avgAwesome2 = sum/numProgrammers2;
+// });
 
-console.log(avgAwesome2);
+// console.log(avgAwesome2);
 //console.log(test);
 
 

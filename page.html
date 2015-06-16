@@ -1,30 +1,51 @@
 <!doctype html>
 <html>
-  <title>Translator</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Awsome Programmers Average</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <script src="node_modules/lodash-toolbox/node_modules/lodash/lodash.js"></script>
+
+<!-- <script src="style.css" type="text/javascript" charset="utf-8"></script> -->
+
 <body>
 
   <main>
-    <h1 style='padding: 20px;' id="color-header">Average Awsomeness</h1>
+    <h1 style='padding: 20px;'>Average Awesomeness</h1>
+    <button id="staff" type="submit">Click to see another employee's information </button>
+    <div>
+      <p id = "name"> Name: </p>
+      <p id = "occupation"> Occupation: </p>
+      <p id = "awesomeIndex"> Awesome Index: <p>
 
-    <form>
-      <textarea id='toTranslate' name='text'>hello world</textarea>
+      <!-- Name:<input type = "text" name = "name"<br>
+      Occupation:<input type = "text" name = "occupation"<br>
+      Awesome Index: <input type = "text" name = "Awesome Index" <br>
+       -->
+       <button id="AvgAwesomeButton" type="submit">Calculate Average Awesomeness</button>
+<!--       <p id='translated'></p> -->
+<!--       <textarea id='result' name='text'>
+      </textarea> -->
+      <h3 id='result'></h3>
       <br>
-      <br>
-      <button id="pigButton" type="submit">Calculate Average Awesomeness
-      <p id='translated'></p>
-
-      <br>
-      <button id="swedButton" type="submit">
-      ROVARSPRAKET — SWEDISH TRANSLATOR BUTTON</button>
-      <p id='swedish-text'></p>
-    </form>
+    </div>
 
   </main>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="main.js"></script>
+<script> $('#name').append(document.createTextNode("Hello"));
+$("staff").append
+
+$("#AvgAwesomeButton").click(function(){
+  $('#result').append(document.createTextNode(avgAwesome()))
+})
+
+</script>
+
+
+  <script src="num1.js" type="text/javascript" charset="utf-8"></script>
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+
+
 
 </body>
 </html>
