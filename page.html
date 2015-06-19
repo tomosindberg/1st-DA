@@ -5,7 +5,6 @@
  <script src="node_modules/lodash-toolbox/node_modules/lodash/lodash.js"></script>
 
 <!-- <script src="style.css" type="text/javascript" charset="utf-8"></script> -->
-
 <body>
   <main>
     <h1 style='padding: 20px;'>Average Awesomeness</h1>
@@ -25,14 +24,13 @@
 <!--       <p id='translated'></p> -->
 <!--       <textarea id='result' name='text'>
       </textarea> -->
-      <h3 id='result'></h3>
+      <h3 id='awesome-index'>avgAwesome()</h3>
       <br>
     </div>
 
   </main>
 
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
 
 <script>
 // var i = 0;
@@ -53,16 +51,12 @@
 //$("staff").append
 
 $("#AvgAwesomeButton").click(function(){
-  $('#result').append(document.createTextNode(avgAwesome()));
+  $('#awesome-index').append(document.createTextNode(avgAwesome()));
 })
 
 </script>
 
-
-  <script src="num1.js" type="text/javascript" charset="utf-8"></script>
   <script src="main.js" type="text/javascript" charset="utf-8"></script>
-
-
 
 </body>
 </html>
