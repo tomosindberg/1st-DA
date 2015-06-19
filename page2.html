@@ -3,12 +3,12 @@
   <title>Awesome Page 2</title>
 <body>
   <main>
-    <h1 style='padding: 20px;'>Average Awesomeness</h1>
-    <button id="staff" type="button" onclick="info()">Click to see employee's information </button>
+    <h1 >Average Awesomeness</h1>
+    <button type="button" onclick="info()" style='background-color: lightblue'>Click to see employee's information </button>
 
     <p id = "name"> Name: <br> Occupaton: <br> Awesome Index: <br></p>
-    <button onclick="avgAwesome()" type="button">Calculate Average
-      Awesomeness </button>
+
+    <button onclick="avgAwesome()" type="button" style='background-color: lightblue'>Calculate Average Awesomeness </button>
 
     <h3 id='awesome-index'>Average Awesomeness:</h3>
     <br>
@@ -36,13 +36,13 @@ occupation: 'President of the Galaxy',
 {
 name: 'Alice',
 occupation: 'programmer',
-awesomeIndex: 19,
+awesomeIndex: 9,
 },
 
 {
 name: 'Julie',
 occupation: 'x-programmer',
-awesomeIndex: 3,
+awesomeIndex: 4,
 }
 ];
 
@@ -66,7 +66,7 @@ function avgAwesome() {
     }
   }
   document.getElementById("awesome-index").innerHTML =
-  "Average Awesomeness:  " + "<br>" + (total/numProgrammers).toFixed(2);
+  "Average Awesomeness:  " + "<br>" + (total/numProgrammers).toFixed(1);
 }
   </script>
 </body>
