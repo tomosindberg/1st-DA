@@ -1,62 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <title>Awsome Programmers Average</title>
- <link rel="stylesheet" type="text/css" href="style.css">
- <script src="node_modules/lodash-toolbox/node_modules/lodash/lodash.js"></script>
-
-<!-- <script src="style.css" type="text/javascript" charset="utf-8"></script> -->
+  <head>
+    <title>Awsome Programmers Average LoDash/num1.js</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="lodash.js"></script>
+  </head>
 <body>
   <main>
-    <h1 style='padding: 20px;'>Average Awesomeness</h1>
-    <button id="staff" type="submit">Click to see employee's information </button>
     <div>
-      <p id = "name"> people[0].name </p>
-      <p id = "occupation"> Occupation: </p>
-      <p id = "awesomeIndex"> Awesome Index: <p>
-
-      <!-- Name:<input type = "text" name = "name"<br>
-      Occupation:<input type = "text" name = "occupation"<br>
-      Awesome Index: <input type = "text" name = "Awesome Index" <br>
-       -->
+      <h1 style='padding: 20px;'>Average Awesomeness</h1>
+      <button id="staff">Click to see employee's information </button>
     </div>
     <div>
-       <button id="AvgAwesomeButton" type="submit">Calculate Average Awesomeness</button>
-<!--       <p id='translated'></p> -->
-<!--       <textarea id='result' name='text'>
-      </textarea> -->
-      <h3 id='awesome-index'>avgAwesome()</h3>
-      <br>
+       <p id = "name"> Name: <br> Occupaton: <br> Awesome Index: <br></p>
     </div>
-
+    <div>
+      <button id="AvgAwesomeButton" type="submit">Calculate Average Awesomeness</button>
+      <h3 id='awesome-index'>Average Awesomeness</h3>
+    </div>
   </main>
-
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-<script>
-// var i = 0;
-// $("#staff").click(function(){
-//   //for(i=0; i<people.length; i++)
-
-//   $('#name').append(document.createTextNode(people[i].name));
-//   $('#occupation').append(document.createTextNode(people[i].occupation));
-//   $('#awesomeIndex').append(document.createTextNode(people[i].awesomeIndex));
-//   if (i<people.length){
-//     i++;
-//   }
-//   else {
-//     i =0;
-//   }
-// })
-//$('#name').append(document.createTextNode("Hello"));
-//$("staff").append
-
-$("#AvgAwesomeButton").click(function(){
-  $('#awesome-index').append(document.createTextNode(avgAwesome()));
-})
-
-</script>
-
-  <script src="main.js" type="text/javascript" charset="utf-8"></script>
-
+<script src="num1.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
